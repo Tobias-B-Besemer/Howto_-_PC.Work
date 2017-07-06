@@ -1,0 +1,48 @@
+# LV-Crew.org_(LVC)_-_PC.Work.Problems.txt
+# (C)reated by: LV-Crew.org (LVC)
+# From        : slim23
+# Version (At): v2016-08-28
+
+# Download-Folder-URL: http://preview.tinyurl.com/LVC-files -> \own_stuff\LV-Crew.org_(LVC)_-_PC.Work\
+
+
+Analysing:
+----------
+Ereignisanzeige
+
+sfc /scannow
+%windir%\Logs\CBS\CBS.log
+findstr /c:"[SR]" %windir%\Logs\CBS\CBS.log >"%windir%\Logs\CBS\sfcdetails.txt"
+%windir%\Logs\CBS\sfcdetails.txt
+
+C:\Windows\Logs\CBS
+
+
+
+Solving:
+--------
+Microsoft Fix it (portable)
+- WindowsUpdateDiagnostic.diagcab
+- ...
+
+System Update Readiness tool (CheckSUR)
+
+dism /Online /Cleanup-Image /ScanHealth
+C:\Windows\Logs\CBS\CBS.log
+C:\Windows\Logs\CBS\CheckSUR.log
+C:\Windows\Logs\DISM\dism.log
+
+dism /Online /Cleanup-Image /CheckHealth
+dism /Online /Cleanup-Image /RestoreHealth
+
+Clean Boot:
+- Start msconfig.exe
+- On the General tab, click the Selective startup option, and then click to clear the Load startup items check box.
+  (The Use Original Boot.ini check box is unavailable.)
+- On the Services tab, click to select the Hide all Microsoft services check box, and then click Disable all.
+(From: https://support.microsoft.com/en-us/kb/929135)
+
+Diagnosesystemstart
+
+chkdsk /f
+

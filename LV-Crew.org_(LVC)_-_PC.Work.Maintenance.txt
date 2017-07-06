@@ -1,0 +1,141 @@
+# LV-Crew.org_(LVC)_-_PC.Work.Maintenance.txt
+# (C)reated by: LV-Crew.org (LVC)
+# From        : slim23
+# Version (At): v2016-11-08
+
+# Download-Folder-URL: http://preview.tinyurl.com/LVC-files -> \own_stuff\LV-Crew.org_(LVC)_-_Howto_-_PC.Work\
+
+
+Microsoft Windows Updates
+360 Total Security / 360 Patch Up: Hotfixes
+(-> Neustart)
+
+Systemdaten bereinigen (Datenträgerbereinigung) mit "Microsoft Windows Disk Cleanup":
+(LV-Crew.org_(LVC)_-_Release_-_Microsoft_Windows_Disk_Cleanup_files)
+- Service Pack Cleanup (Service Pack-Sicherungsdateien)
+- Temporary Setup Files (Temporäre Windows-Installationsdateien)
+- Update Cleanup (Windows Update-Bereinigung)
+- Windows Upgrade Log Files (Protokolldateien für Windows-Upgrades)
+Verknüpfung   : "Microsoft Windows Disk Cleanup - Sage Run 1"
+Command Prompt: "%windir%\system32\cleanmgr.exe /sagerun:1"
+-> Neustart
+
+Systemdaten bereinigen mit "360 Total Security":
+Bereinigung / Nicht benötigte Dateien bereinigen / Nicht benötigte Windows-Systemdateien / Window WinSxs-Sichungscache
+-> Neustart
+
+Ausmisten:
+- C:\Windows\Downloaded Program Files\
+- C:\ProgramData\Package Cache\
+- C:\Users\Administrator\.oracle_jre_usage\
+- C:\Users\Administrator\.swt\lib\win32\x86_64\
+
+Datenträgerbereinigung mit %windir%\system32\cleanmgr.exe
+- Internet Cache Files (Temporäre Internetdateien)
+cleanmgr /sagerun:2
+C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5
+
+Problemberichtserstattung
+Zuverlässigkeitsverlauf ausmisten
+
+Driver Checks:
+- Driver Updater
+- DriverDoc
+- DevID Agent
+- DriverMax
+- DriverUpdaterPro
+
+Updates installieren:
+- Avira AntiVir
+- Mozilla
+- HP
+- CCEnhancer
+- ClamAV DB
+
+Auf Updates prüfen und Update-Dateien sichern:
+- Avira Launcher
+  C:\ProgramData\Avira\???
+- Avira System Speedup
+  C:\ProgramData\Avira\???
+- 360 Total Security
+  F:\Program Files (x86)\360\Total Security\modules\
+  (Wird gelöscht nachdem Update installiert wurde!)
+- DevID Agent
+  ???
+- Nvidia
+  C:\ProgramData\NVIDIA Corporation\GeForce Experience\Update\
+- Java
+  C:\Users\Administrator\AppData\Local\Temp\
+- Adobe
+  C:\ProgramData\Adobe\ARM\
+  C:\ProgramData\Adobe\ARM\S\
+  C:\ProgramData\Adobe\Setup\
+- Google
+  ???
+  ???
+- Dropbox
+  C:\Users\Administrator\AppData\Local\Dropbox\Update\Download\{CC46080E-4C33-4981-859A-BBA2F780F31E}\
+- Apple
+  C:\ProgramData\Apple\Installer Cache\
+  C:\ProgramData\Apple Computer\Installer Cache\
+- Skype
+  C:\ProgramData\Skype\
+- Teamviewer
+  ???
+
+Updates downloaden und installieren:
+- CCleaner
+- SMPlayer (+ YouTube-Code aktualisieren)
+- Total Commander
+- Double Commander
+- LibreOffice
+- GIMP
+- XnView Update
+- XnViewMP Update
+- ClamAV
+
+Kies
+SmartSwitch
+Android SDK
+
+Ausmisten:
+- C:\Users\Administrator\AppData\Local\Temp\
+- C:\Windows\Temp\
+- C:\Windows\Installer\
+- C:\Users\Administrator\AppData\Local\Dropbox\Update\Download\{CC46080E-4C33-4981-859A-BBA2F780F31E}\
+
+Services:
+- (Apple) iPod-Dienst -> Deaktiviert
+- Avira System Speedup -> Manuell
+- NVIDIA Streamer Network Service -> Manuell
+- TeamViewer -> Manuell
+
+Autostart:
+- Apple iTunesHelper
+- Avira System Speedup (2x)
+- MEGAsync
+
+Task Scheduler (Aufgabenplanung) überprüfen (CCleaner zeigt nicht alle Aufgaben/Planungen an!)
+
+Firefox Crash Reports verschieben:
+C:\Users\Administrator\AppData\Roaming\Mozilla\Firefox\Crash Reports\
+
+Avira AntiVir scan
+
+Spybot-S&D:
+- Update
+- Scan
+- Immunisieren
+- C:\Windows\System32\drivers\etc\ ausmisten
+
+CCleaner:
+- Cookies
+- Reste entfernen
+- Registry Clean
+
+Windows Wiederherstellungspunkte löschen und neuen erstellen
+
+Defrag Registry + Online + Offline
+
+chkdsk /f
+
